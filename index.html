@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Github Profile Explorer</title>
-  <link rel="stylesheet"
-  href="style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  integrity="sha512-..."
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-  />
-<meta charset="UTF-8">
-<meta name="description" content="Github profile explorer helps you find github profile content">
-<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Github profile explorer helps you find github profile content">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
 </head>
+
 <body>
-<div class="card" id="card">
-<h2 class="headingText">
-<span class="heading-item">
-<i class="fa-brands fa-github"></i>
-<span class="icon-label">GitHub</span>
-</span>
+  <div class="card" id="cad">
+    <h2 class="headingText">
+      <span class="heading-item">
+        <i class="fa-brands fa-github"></i>
+        <span class="icon-label">GitHub</span>
+      </span>
 
-<span class="heading-item">
-<i class="fa-solid fa-circle-user"></i>
-<span class="icon-label">Profile</span>
-</span>
+      <span class="heading-item">
+        <i class="fa-solid fa-circle-user"></i>
+        <span class="icon-label">Profile</span>
+      </span>
 
-<span class="explorer-text">Explorer</span>
-</h2>
+      <span class="explorer-text">Explorer</span>
+    </h2>
 
-<div class="inputs">
-<input
-type="text"
-class="inputUsername"
-id="inputUsername"
-placeholder="Enter username"
-/>
-<button class="searchBtn" id="searchBtn">Search</button>
-</div>
-</div>
-<div class="outputCard" id="outputCard">
+    <div class="inputs">
+      <input type="text" class="inputUsername" id="inputUsername" placeholder="Enter username" />
+      <button class="searchBtn" id="searchBtn">Search</button>
+    </div>
+  </div>
+  <div class="outputCard" id="outputCard">
+    <div class="profileHeader">
+      <img class="profileAvatar" id="profileAvatar" src="" alt="GitHub profile avatar">
 
-</div>
+      <div class="profileIdentity">
+        <h3 class="profileName" id="profileName">
+
+        </h3>
+
+        <p class="profileUsername" id="profileUsername">
+          @
+        </p>
+      </div>
+    </div>
+
+    <p class="profileLocation" id="profileLocation">
+      <i class="fa-solid fa-location-dot"></i>
+
+    </p>
+
+    <div class="profileStats">
+
+      <div class="stat">
+        <span class="statLabel">Repositories</span>
+        <strong class="statValue" id="repoCount"></strong>
+      </div>
+
+      <div class="stat">
+        <span class="statLabel">Followers</span>
+        <strong class="statValue" id="followersCount"></strong>
+      </div>
+
+      <div class="stat">
+        <span class="statLabel">Following</span>
+        <strong class="statValue" id="followingCount"></strong>
+      </div>
+
+    </div>
+        
+        <a class="githubLink" 
+          id="githubLink" href="#" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          <i 
+          class="fa-brands fa-github"></i>
+          View GitHub
+        </a>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
